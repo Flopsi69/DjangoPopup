@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PopUp</title>
+
+  <!-- Current Styles -->
+  <link rel="stylesheet" href="old/fancybox.css">
+  <link rel="stylesheet" href="old/old-styles.css">
+
+  <!-- New Styles for Modal -->
+  <link rel="stylesheet" href="new-styles.css">
+</head>
+
+<body>
+  <!-- FANCY WRAP begin start (just for vizualization) -->
+  <div class="fancybox-container fancybox-is-open fancybox-can-swipe" role="dialog" tabindex="-1"
+    id="fancybox-container-1" style="transition-duration: 366ms;">
+    <div class="fancybox-bg"></div>
+    <div class="fancybox-inner">
+      <div class="fancybox-stage">
+        <div class="fancybox-slide fancybox-slide--html fancybox-slide--current fancybox-slide--complete" style="">
+          <!-- FANCY WRAP begin finish (just for vizualization) -->
+
+
+          <!-- FORM START (ver 2.0) -->
+          <div class="modal-form__wrap fancybox-content">
+            <!-- Mofal form Sidebar -->
+            <div class="modal-form__sidebar">
+              <div class="modal-form__sidebar-top">
+                <img src="img/top3.png" alt="" />
+              </div>
+              <div class="modal-form__sidebar-awards">
+                <div class="modal-form__sidebar-award">
+                  <img src="img/award-1.png" alt="" />
+                </div>
+                <div class="modal-form__sidebar-award">
+                  <img src="img/award-2.png" alt="" />
+                </div>
+                <div class="modal-form__sidebar-award">
+                  <img src="img/award-3.png" alt="" />
+                </div>
+              </div>
+
+              <div class="modal-form__sidebar-note">
+                We take all the technical worries off your shoulders
+              </div>
+              <ul class="modal-form__sidebar-list">
+                <li>Software consultancy</li>
+                <li>WEB, mobile, Desktop app development</li>
+                <li>UX/UI design</li>
+                <li>Data science</li>
+                <li>DEVOPS</li>
+                <li>Quality assurance</li>
+              </ul>
+            </div>
+
+            <!-- Form -->
+            <form class="modal-form" id="contact-form" style="">
+              <p class="modal-form__subtitle">Almost done!</p>
+              <ul class="modal-form__progress" id="modal-form-progress">
+                <li class="active"></li>
+                <li class="active"></li>
+                <li class="active"></li>
+                <li class="active"></li>
+                <li class="active"></li>
+                <li></li>
+              </ul>
+              <h4 class="modal-form__title">Complete this form <br>
+                to receive a price estimate and time to delivery</h4>
+              <div class="modal-form__main">
+                <input id="full_name" class="modal-form__input" type="text" name="full_name" placeholder="Name*"
+                  value="" autocomplete="off" minlength="1" maxlength="127" data-label="name">
+                <input id="email" class="modal-form__input" type="email" name="email" placeholder="Email*" value=""
+                  autocomplete="off" minlength="1" maxlength="127" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}"
+                  data-label="email">
+                <input id="phone" class="modal-form__input" type="tel" name="phone" placeholder="Phone number*" value=""
+                  oninput="this.value = this.value.replace(/[^0-9.]/g, ''); this.value = this.value.replace(/(\..*)\./g, '$1');"
+                  data-label="phone">
+                <textarea id="project_description" class="modal-form__textarea" name="project_description" rows="4"
+                  placeholder="How can we help you? (optional)" data-label="description"></textarea>
+                <div class="response-error"></div>
+              </div>
+
+              <div class="modal-form__nda">
+                <label class="custom-checkbox">
+                  <input type="checkbox" name="" checked>
+                  <span class=" checkmark"></span>
+                  I want to protect my data by signing an NDA.
+                </label>
+              </div>
+
+              <input class="btn btn-primary" type="submit" value="Get project estimate">
+              <small class="modal-form__privacy">
+                By clicking “Get project estimate” you consent to the processing of your data by Django Stars company
+                for
+                marketing purposes, including sending emails. For details, check our <a href="/policies/privacy-policy/"
+                  target="_blank">Privacy Policy</a>.
+              </small>
+              <button type="button" data-fancybox-close="" class="fancybox-button fancybox-close-small"
+                title="Close"><svg xmlns="http://www.w3.org/2000/svg" version="1" viewBox="0 0 24 24">
+                  <path d="M13 12l5-5-1-1-5 5-5-5-1 1 5 5-5 5 1 1 5-5 5 5 1-1z"></path>
+                </svg></button>
+            </form>
+          </div>
+          <!-- FORM END (ver 2.0) -->
+
+
+          <!-- FANCY WRAP end start (just for vizualization) -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- FANCY WRAP end finish (just for vizualization) -->
+
+</body>
+
+</html>
